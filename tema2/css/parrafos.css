@@ -1,0 +1,17 @@
+h1 {
+  color: #00ccaa;
+}
+
+p.pink {
+  color: #ff12aa;
+}
+
+#unique {
+  color: #f19e04;
+  background-color: #121212;
+  padding: 10px;
+}
+
+div.orange {
+  color: orangered;
+}

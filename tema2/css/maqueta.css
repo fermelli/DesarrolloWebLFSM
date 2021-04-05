@@ -1,0 +1,44 @@
+#container {
+  margin: 0 auto;
+  text-align: left;
+  width: 800px;
+  height: 600px;
+  border: 1px solid #fa2155;
+}
+
+#head {
+  width: 800px;
+  margin: 0 auto;
+  background-color: orangered;
+  height: 100px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+}
+
+#left {
+  width: 200px;
+  height: 400px;
+  background-color: #02ae11;
+
+  float: left;
+}
+
+#right {
+  width: 600px;
+  height: 400px;
+
+  float: left;
+  background-color: orchid;
+}
+
+#foot {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #008cff;
+  clear: both;
+  height: 100px;
+  text-align: center;
+}
