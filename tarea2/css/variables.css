@@ -1,0 +1,12 @@
+:root {
+  --color-primary: #1877f2;
+  --color-primary-hover: #1d64c2;
+  --color-secondary: #212121;
+  --color-on-secondary: #ffffff;
+  --color-text: #2a3b47;
+  --color-text2: #1b4f79;
+  --color-gray: #cacaca;
+  --color-shadow: rgba(0, 0, 0, 0.2);
+  --font-prymary: Roboto, Helvetica, sans-serif;
+  --transition-prop: all ease 0.3s;
+}

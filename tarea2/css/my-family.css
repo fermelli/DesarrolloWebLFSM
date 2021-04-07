@@ -1,0 +1,22 @@
+.item {
+  display: flex;
+  justify-content: center;
+}
+
+.item__left, .item__right {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+}
+
+.item__image {
+  height: 400px;
+  width: 400px;
+  border-radius: 0.5rem;
+}
+
+.item__subtitle {
+  width: 100%;
+}

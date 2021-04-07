@@ -1,0 +1,50 @@
+.appbar {
+  background-color: #ffffff;
+}
+
+.appbar__nav {
+  padding: 1rem;
+}
+
+.appbar__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.appbar__link {
+  align-items: center;
+  display: flex;
+  padding: 1rem 0.5rem;
+  height: 60px;
+}
+
+.appbar__link:hover {
+  border-bottom: 2px solid var(--color-primary);
+  padding: 1rem 0.5rem 0.875rem 0.5rem;
+}
+
+.appbar__link--active {
+  border-bottom: 2px solid var(--color-primary-hover);
+  padding: 1rem 0.5rem 0.875rem 0.5rem;
+}
+
+.appbar__link:hover .appbar__icon {
+  fill: var(--color-primary-hover);
+}
+
+.appbar__link:hover .appbar__text {
+  color: var(--color-primary-hover);
+}
+
+.appbar__icon {
+  fill: var(--color-primary);
+  height: 1.5rem;
+  margin: 0 0.5rem;
+  width: 1.5rem;
+}
+
+.appbar__text {
+  color: var(--color-primary);
+  margin: 0 0.5rem;
+}
