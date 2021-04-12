@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/comun.css" />
+    <link rel="stylesheet" href="./../css/formulario.css" />
+    <title>Formulario Serie Fibonacci</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="card" action="generar-serie.php" method="get">
+        <h1>Serie Fibonacci</h1>
+        <label for="number-of-elements">Cantidad de Elementos</label>
+        <input
+          type="number"
+          name="number-of-elements"
+          id="number-of-elements"
+          min="1"
+          placeholder="Elementos de la serie"
+          value="1"
+          required
+        />
+        <input type="submit" value="Generar Serie" />
+        <span class="link"><a href="./../index.html">Inicio</a></span>
+      </form>
+    </div>
+  </body>
+</html>

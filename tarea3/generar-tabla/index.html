@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../css/comun.css" />
+    <link rel="stylesheet" href="./../css/formulario.css" />
+    <title>Formulario Generar Tabla</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="card" action="generar-tabla.php" method="get">
+        <h1>Generar Tabla</h1>
+        <label for="filas">Número de Filas</label>
+        <input
+          type="number"
+          name="filas"
+          id="filas"
+          min="1"
+          required
+          placeholder="Número de Filas"
+        />
+        <label for="columnas">Número de Columnas</label>
+        <input
+          type="number"
+          name="columnas"
+          id="columnas"
+          min="1"
+          required
+          placeholder="Número de Columnas"
+        />
+        <input type="submit" value="Generar Tabla" />
+        <span class="link"><a href="./../index.html">Inicio</a></span>
+      </form>
+    </div>
+  </body>
+</html>
