@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="./tablaintercalado.php" method="post">
+        <label for="numberRows">Filas</label>
+        <input
+          type="number"
+          name="numberRows"
+          id="numberRows"
+          placeholder="Introduzca el número de filas"
+          required
+        />
+        <label for="numberCols">Columnas</label>
+        <input
+          type="number"
+          name="numberCols"
+          id="numberCols"
+          placeholder="Introduzca el número de columnas"
+          required
+        />
+        <input type="submit" value="Generar Tabla" />
+      </form>
+    </div>
+  </body>
+</html>

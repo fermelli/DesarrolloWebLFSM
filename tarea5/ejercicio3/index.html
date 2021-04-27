@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Crear Estante</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="./generar-estante.php" method="post">
+        <label for="top1">Tope 1</label>
+        <input
+          type="number"
+          name="top1"
+          id="top1"
+          placeholder="Capacidad de la fila 1 del estante"
+          min="1"
+          step="1"
+          required
+        />
+        <label for="top2">Tope 2</label>
+        <input
+          type="number"
+          name="top2"
+          id="top2"
+          placeholder="Capacidad de la fila 2 del estante"
+          min="1"
+          step="1"
+          required
+        />
+        <label for="top3">Tope 3</label>
+        <input
+          type="number"
+          name="top3"
+          id="top3"
+          placeholder="Capacidad de la fila 2 del estante"
+          min="1"
+          step="1"
+          required
+        />
+        <input type="submit" value="Ir a Estante" />
+      </form>
+    </div>
+  </body>
+</html>
