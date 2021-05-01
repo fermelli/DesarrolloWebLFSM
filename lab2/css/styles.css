@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
+.container {}
+
+.title {
+  margin: 0.5rem 0 1rem 0;
+  text-align: center;
+}
+
+.form {
+  width: 460px;
+  max-width: 460px;
+  margin: 3rem auto 0 auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+
+.field {
+  display: flex;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.icon-container {
+  width: 48px;
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2e5cf5;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
+.input-container {
+  width: 100%;
+  position: relative;
+}
+
+.input, .label  {
+  display: block;
+  position: absolute;
+
+}
+
+.input {
+  height: 48px;
+  width: 100%;
+  outline: none;
+  border: 1px solid #2e5cf5;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.input[type=number]::-webkit-inner-spin-button,
+.input[type=number]::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+input[type=number] { -moz-appearance:textfield; }
+
+.label {
+  padding: 0.5rem 1rem 0 1rem;
+  user-select: none;
+  font-size: 0.75rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  min-width: 120px;
+  height: 46px;
+  margin: 0.5rem;
+  text-transform: uppercase;
+  background-color: #f7d022;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .3s ease-in-out;
+}
+
+
+
+.btn:hover {
+  background-color: #f1d452;
+}
+
+.container-table {
+  max-width: 1400px;
+  width: 1400px;
+  margin: 3rem auto;
+  overflow-y: auto;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table td {
+  border: 1px solid #000000;
+  padding: 0.25rem 1rem;
+}
+
+.table td {
+  min-width: 80px;
+}
+
+.table tr:first-child td,
+.table tr td:first-child {
+  background-color: #2e5cf5;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.link {
+  display: inline-block;
+  background-color: #52f194;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: #181818;
+  min-width: 100px;
+  text-align: center;
+  transition: background-color .3s ease-in-out;
+}
+
+.link:hover {
+  background-color: #27c468;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  height: 50px;
+  background-color: #f3f3f3;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  color: #181818;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 0.25rem;
+}
+
+.nav__link:hover {
+  background-color: #dddddd;
+}
+
+.table-operations {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.table-operations th,
+.table-operations td {
+  border: 1px solid #181818;
+  min-width: 200px;
+  padding: 0.5rem 1rem;
+}
+
+.table-operations th,
+.table-operations td.orange {
+  background-color: orangered;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.message {
+  color: #2e84f5;
+  line-height: 2;
+}
