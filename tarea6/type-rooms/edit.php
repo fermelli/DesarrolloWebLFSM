@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <header class="header"></header>
   <div class="container">
     <?php
     if (isset($_POST['id']) && isset($_POST['description']) && isset($_POST['number_beds'])) :

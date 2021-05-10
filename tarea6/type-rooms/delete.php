@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <header class="header"></header>
   <div class="container">
     <?php
 

@@ -25,6 +25,10 @@ a {
   text-decoration: none;
 }
 
+.mb-4 {
+  margin-bottom: 2rem;
+}
+
 .container {
   max-width: 1000px;
   width: 1000px;
@@ -43,12 +47,20 @@ a {
   flex-wrap: wrap;
 }
 
+.col {
+  width: 50%;
+}
+
 .col-4 {
   width: 33.3333%;
 }
 
 .col-3 {
   width: 25%;
+}
+
+.col-8 {
+  width: 66.6667%;
 }
 
 .title {
@@ -59,6 +71,8 @@ a {
 .subtitle {
   margin: 0.5rem 0 1rem 0;
 }
+
+/* TABLE */
 
 .table {
   margin: 2rem 0;
@@ -122,6 +136,16 @@ a {
   background-color: #f7f7f7;
 }
 
+.link--secondary {
+  border: 1px solid #181818;
+  background-color: #ffffff;
+  color: #181818;
+}
+
+.link--secondary:hover {
+  background-color: #f7f7f7;
+}
+
 .link--icon {
   display: flex;
   width: 40px;
@@ -153,6 +177,14 @@ a {
   fill: #f53022;
 }
 
+.icon--green {
+  fill: #16c55f;
+}
+
+.icon--primary {
+  fill: #b42ddd;
+}
+
 /* UTILS */
 .text-align-right {
   text-align: right;
@@ -167,6 +199,10 @@ a {
   border-radius: 0.5rem;
 }
 
+.form--files {
+  max-width: 100%;
+}
+
 .field {
   height: 50px;
   background-color: #f5f5f5;
@@ -174,6 +210,10 @@ a {
   border-bottom: 1px solid #303030;
   display: flex;
   margin: 1rem 0 1.5rem 0;
+}
+
+.field--readonly {
+  background-color: #b8b8b8;
 }
 
 .field__container-icon {
@@ -199,6 +239,10 @@ a {
   padding: 1rem 1rem 0.125rem 0;
 }
 
+.field__input:read-only {
+  cursor: not-allowed;
+}
+
 .field--number .field__input::-webkit-inner-spin-button, 
 .field--number .field__input::-webkit-outer-spin-button {
   -webkit-appearance: none; 
@@ -206,6 +250,10 @@ a {
 
 .field--number .field__input {
   -moz-appearance:textfield;
+}
+
+.field__input--file {
+  padding: 1.25rem 1rem 0rem 0;
 }
 
 .field__label {
@@ -325,6 +373,9 @@ a {
 }
 
 /* MESSAGE */
+.message {
+  margin-bottom: 2rem;
+}
 
 .message__title {
   font-weight: bold;
@@ -416,6 +467,7 @@ a {
 /* NAV */
 .header {
   background-color: #e64b13;
+  height: 70px;
 }
 
 .nav {
@@ -438,4 +490,19 @@ a {
 
 .nav__link--active {
   border-bottom: 2px solid #ffffff;
+}
+
+.picture {
+  position: relative;
+}
+
+.picture__image {
+  width: 100%;
+}
+
+.picture__link {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #ffffff;
 }

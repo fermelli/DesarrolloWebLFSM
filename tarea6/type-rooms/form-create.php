@@ -14,7 +14,10 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="./../index.html" class="nav__link">Inicio</a>
+          <a href="./../index.php" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="./../reservations/index.php" class="nav__link">Reservas</a>
         </li>
         <li class="nav__item">
           <a href="./../rooms/index.php" class="nav__link">Habitaciones</a>
@@ -30,6 +33,8 @@
   <div class="container">
 
     <h1 class="title">Formulario Agregar de Tipo Habitación</h1>
+
+    <a class="link link--secondary mb-4" href="./index.php">Volver a Tipo de Habitaciones</a>
 
     <form class="form" action="./create.php" method="post">
 

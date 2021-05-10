@@ -14,7 +14,10 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="./../index.html" class="nav__link">Inicio</a>
+          <a href="./../index.php" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="./../reservations/index.php" class="nav__link">Reservas</a>
         </li>
         <li class="nav__item">
           <a href="./../rooms/index.php" class="nav__link">Habitaciones</a>
@@ -29,6 +32,8 @@
   </header>
   <div class="container">
     <h1 class="title">Formulario Agregar Habitación</h1>
+
+    <a class="link link--secondary mb-4" href="./index.php">Volver a Habitaciones</a>
 
     <form class="form" action="./create.php" method="post">
 
@@ -79,7 +84,7 @@
 
       <div class="combobox">
         <select class="combobox__select" name="type_room_id" id="type_room_id" required>
-          <option class="combobox__option" value="" disabled selected>--- Seleccione una tipo ---</option>
+          <option class="combobox__option" value="" disabled selected>--- Seleccione un tipo ---</option>
           <?php
 
           include('./../database_init.php');

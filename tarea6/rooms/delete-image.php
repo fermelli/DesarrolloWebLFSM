@@ -22,12 +22,20 @@
 
         include('./../database_init.php');
 
-        if ($db->deleteRoomById($id)) :
+        $image = $db->getImageById($id);
+
+        if ($db->deleteImageById($id) && $image != NULL) :
+
+          $path = "./../public/images/" . $_GET['room_id'] . "/" . $image['name'];
+
+          if (file_exists($path)) {
+            unlink($path);
+          }
 
     ?>
           <div class="message message--success">
-            <h3 class="message__title">Habitación</h3>
-            <p class="message__content">¡Registro eliminado con éxito!</p>
+            <h3 class="message__title">Imágenes</h3>
+            <p class="message__content">Imagen eliminada con éxito!</p>
           </div>
         <?php
 
@@ -35,8 +43,8 @@
 
         ?>
           <div class="message message--danger">
-            <h3 class="message__title">Habitación</h3>
-            <p class="message__content">¡No se pudo eliminar el registro, tiene una reserva registrada!</p>
+            <h3 class="message__title">Imágenes</h3>
+            <p class="message__content">¡No se pudo eliminar la imagen!</p>
           </div>
         <?php
 
@@ -48,7 +56,7 @@
 
         ?>
         <div class="message message--warning">
-          <h3 class="message__title">Habitación</h3>
+          <h3 class="message__title">Imágenes</h3>
           <p class="message__content">¡El campo ID esta vacío!</p>
         </div>
       <?php
@@ -59,14 +67,16 @@
 
       ?>
       <div class="message message--warning">
-        <h3 class="message__title">Habitación</h3>
+        <h3 class="message__title">Imágenes</h3>
         <p class="message__content">¡No se envió el ID necesario!</p>
       </div>
     <?php
 
     endif;
+
     ?>
-    <meta http-equiv="refresh" content="2; url=./index.php">
+
+    <meta http-equiv="refresh" content="2; url=<?= isset($_GET['room_id']) ? "./show.php?id=" . $_GET['room_id'] : "./../index.php" ?>">
   </div>
 </body>
 

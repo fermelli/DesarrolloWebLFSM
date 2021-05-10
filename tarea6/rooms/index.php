@@ -14,7 +14,10 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="./../index.html" class="nav__link">Inicio</a>
+          <a href="./../index.php" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="./../reservations/index.php" class="nav__link">Reservas</a>
         </li>
         <li class="nav__item">
           <a href="./../rooms/index.php" class="nav__link nav__link--active">Habitaciones</a>
@@ -46,7 +49,7 @@
         foreach ($rooms as $room) :
 
         ?>
-          <div class="col-3">
+          <div class="col-4">
 
             <div class="card">
 
@@ -65,6 +68,12 @@
                   <a class="link link--icon" title="Eliminar" href="./delete.php?id=<?= $room['id'] ?>">
                     <svg class="icon icon--red link__icon">
                       <use xlink:href="./../assets/feather-sprite.svg#delete" />
+                    </svg>
+                  </a>
+
+                  <a class="link link--icon" title="Ver más" href="./show.php?id=<?= $room['id'] ?>">
+                    <svg class="icon icon--green link__icon">
+                      <use xlink:href="./../assets/feather-sprite.svg#show" />
                     </svg>
                   </a>
 
@@ -117,7 +126,7 @@
                       <use xlink:href="./../assets/feather-sprite.svg#description" />
                     </svg>
                     <span class="card__item-datum">
-                      <?= $room['description'] ?>
+                      <?= $room['description'] != NULL ? $room['description'] : 'No definida' ?>
                     </span>
                   </li>
 
@@ -126,7 +135,7 @@
                       <use xlink:href="./../assets/feather-sprite.svg#bed" />
                     </svg>
                     <span class="card__item-datum">
-                      <?= $room['number_beds'] ?> camas
+                      <?= $room['number_beds'] ?> <?= $room['number_beds'] == 1 ? 'cama' : 'camas' ?>
                     </span>
                   </li>
 
@@ -142,6 +151,15 @@
         endforeach;
 
         ?>
+      </div>
+    <?php
+
+    else :
+
+    ?>
+      <div class="message message--warning">
+        <h3 class="message__title">Habitaciones</h3>
+        <p class="message__content">¡No hay registros en la base de datos!</p>
       </div>
     <?php
 

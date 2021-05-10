@@ -14,7 +14,10 @@
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="./../index.html" class="nav__link">Inicio</a>
+          <a href="./../index.php" class="nav__link">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="./../reservations/index.php" class="nav__link">Reservas</a>
         </li>
         <li class="nav__item">
           <a href="./../rooms/index.php" class="nav__link">Habitaciones</a>
