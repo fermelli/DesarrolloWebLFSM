@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Formulario Calendario</title>
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <div class="container">
+      <form
+        class="form form--center form--full"
+        action="./calendario.php"
+        method="get"
+      >
+        <div class="row">
+          <div class="col">
+            <div class="combobox">
+              <select class="combobox__select" name="month" id="month" required>
+                <option class="combobox__option" value="" disabled selected>
+                  --- Seleccione un mes ---
+                </option>
+                <option value="1" class="combobox__option">Enero</option>
+                <option value="2" class="combobox__option">Febrero</option>
+                <option value="3" class="combobox__option">Marzo</option>
+                <option value="4" class="combobox__option">Abril</option>
+                <option value="5" class="combobox__option">Mayo</option>
+                <option value="6" class="combobox__option">Junio</option>
+                <option value="7" class="combobox__option">Julio</option>
+                <option value="8" class="combobox__option">Agosto</option>
+                <option value="9" class="combobox__option">Septiembre</option>
+                <option value="10" class="combobox__option">Octubre</option>
+                <option value="11" class="combobox__option">Noviembre</option>
+                <option value="12" class="combobox__option">Diciembre</option>
+              </select>
+              <div class="combobox__container-icon">
+                <svg class="icon combobox__icon">
+                  <use xlink:href="./assets/feather-sprite.svg#expand" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="field">
+              <div class="field__container-icon">
+                <svg class="icon field__icon">
+                  <use xlink:href="./assets/feather-sprite.svg#year" />
+                </svg>
+              </div>
+              <div class="field__container-input">
+                <input
+                  class="field__input"
+                  type="year"
+                  name="year"
+                  id="year"
+                  placeholder="Introduzca un año"
+                  maxlength="4"
+                  required
+                />
+                <label for="year" class="field__label">Año</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-actions container-actions--center">
+          <input class="btn btn--contained" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
