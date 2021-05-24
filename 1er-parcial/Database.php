@@ -31,4 +31,10 @@ class Database extends mysqli
     $result->free();
     return $users;
   }
+
+  public function editUser($id, $names, $surnames, $email)
+  {
+    $query = "UPDATE usuarios SET nombres='$names', apellidos='$surnames', correo='$email' WHERE id=$id";
+    return $this->query($query);
+  }
 }

@@ -140,6 +140,10 @@ a {
   width: 800px;
 }
 
+.form--100w {
+  width: 100%;
+}
+
 /* FIELD */
 
 .field {
