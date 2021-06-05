@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0.75rem;
+  border: 1px solid #383838;
+}
+
+.container {
+  width: 1200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  width: 400px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.field__label,
+.selection__label,
+.radios__label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.radios__label {
+  cursor: pointer;
+  height: 40px;
+  padding: 0.5rem;
+}
+
+.radios__label:hover {
+  background-color: #eeeeee;
+}
+
+.field__input,
+.selection__select {
+  width: calc(100% - 36px);
+  height: 40px;
+  margin: 0.5rem 0 1rem;
+  padding: 0.25rem 1rem;
+}
+
+.btn {
+  height: 40px;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  margin-right: 1rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-primary {
+  color: #ffffff;
+  background-color: #14a3b6;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #118392;
+}
+
+.btn-secondary {
+  background-color: #ffffff;
+  border: 1px solid #181818;
+}
+
+.btn-secondary:hover {
+  background-color: #f3f3f3;
+}
+
+.div-result {
+  padding: 1rem;
+}

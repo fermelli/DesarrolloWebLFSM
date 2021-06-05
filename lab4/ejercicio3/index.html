@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 4 - Ejercicio 3</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <form>
+          <div class="radios">
+            <label for="red" class="radios__label">
+              <input
+                type="radio"
+                name="bg"
+                class="radios__radio"
+                id="red"
+                oninput="changeBackgroundColor('red')"
+              />
+              Rojo
+            </label>
+            <label for="yellow" class="radios__label">
+              <input
+                type="radio"
+                name="bg"
+                class="radios__radio"
+                id="yellow"
+                oninput="changeBackgroundColor('yellow')"
+              />
+              Amarillo
+            </label>
+            <label for="green" class="radios__label">
+              <input
+                type="radio"
+                name="bg"
+                class="radios__radio"
+                id="green"
+                oninput="changeBackgroundColor('green')"
+              />
+              Verde
+            </label>
+          </div>
+        </form>
+        <div>
+          <div class="box" id="box">Salgado Miguez Luis Fernando</div>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

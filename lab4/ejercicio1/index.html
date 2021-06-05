@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 4 - Ejercicio 1</title>
+    <link rel="stylesheet" href="./../css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <form class="form">
+          <div class="field">
+            <label for="number" class="field__label">Número</label>
+            <input
+              type="number"
+              class="field__input"
+              id="number"
+              min="1"
+              max="100"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary"
+            onclick="convertToLiteral(event)"
+          >
+            Convertir a literal
+          </button>
+          <button
+            type="reset"
+            class="btn btn-secondary"
+            onclick="limpiar(event)"
+          >
+            Limpiar
+          </button>
+        </form>
+        <div class="div-result">
+          <span id="result"></span>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
