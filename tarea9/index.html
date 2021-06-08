@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 9 -JavaScript DOM</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <form class="form">
+          <h1 class="title">Ecuación de Segundo Grado</h1>
+          <div class="field--inline">
+            <label class="field__label" for="a">a</label>
+            <input class="field__input" id="a" type="number" />
+          </div>
+          <span class="equation">x<sup>2</sup>&nbsp;+</span>
+          <div class="field--inline">
+            <label class="field__label" for="b">b</label>
+            <input class="field__input" id="b" type="number" />
+          </div>
+          <span class="equation">x&nbsp;+</span>
+          <div class="field--inline">
+            <label class="field__label" for="c">c</label>
+            <input class="field__input" id="c" type="number" />
+          </div>
+          <span class="equation">&equals;&nbsp;0</span>
+          <div class="actions">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              onclick="perfomCalculation(event)"
+            >
+              Calcular
+            </button>
+            <button
+              type="reset"
+              class="btn btn-secondary"
+              onclick="deleteResults(event)"
+            >
+              Limpiar
+            </button>
+          </div>
+        </form>
+        <h2 class="subtitle">Resultados</h2>
+        <div class="results">
+          <p>
+            <span class="equis">x<sub>1</sub></span> =
+            <span id="resultX1"></span>
+          </p>
+          <p>
+            <span class="equis">x<sub>2</sub></span> =
+            <span id="resultX2"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
