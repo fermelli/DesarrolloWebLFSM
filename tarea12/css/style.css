@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main {
+  width: calc(100% - 256px);
+}
+
+.aside {
+  width: 256px;
+}
+
+.nav__list {
+  list-style: none;
+}
