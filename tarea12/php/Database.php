@@ -31,10 +31,16 @@ class Database extends mysqli
 
   public function getProducts()
   {
-    $query = "SELECT productos.id, fotografia, producto, descripcion, precio, categoria, marca FROM productos INNER JOIN categorias ON idcategoria = categorias.id INNER JOIN marcas ON idmarca = marcas.id";
+    $query = "SELECT productos.id, producto, descripcion, precio, categoria, marca FROM productos INNER JOIN categorias ON idcategoria = categorias.id INNER JOIN marcas ON idmarca = marcas.id ORDER BY productos.id";
     $result = $this->query($query);
     $products = $result->fetch_all(MYSQLI_ASSOC);
     $result->free();
     return $products;
+  }
+
+  public function saveProduct($producto, $idcategoria, $descripcion, $precio, $idmarca)
+  {
+    $query = "INSERT INTO productos (producto, idcategoria, descripcion, precio, idmarca) VALUES ('$producto', $idcategoria, '$descripcion', $precio, $idmarca)";
+    return $this->query($query);
   }
 }

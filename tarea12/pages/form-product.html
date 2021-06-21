@@ -1,11 +1,13 @@
 <form class="form">
-  <div class="field">
-    <label class="field__label" for="fotografia">Fotografía</label>
-    <input class="field__input" id="fotografia" type="file" />
-  </div>
+  <h1 class="title">Formulario Producto</h1>
   <div class="field">
     <label class="field__label" for="producto">Producto</label>
-    <input class="field__input" id="producto" type="text" />
+    <input
+      class="field__input"
+      id="producto"
+      type="text"
+      placeholder="Nombre del producto"
+    />
   </div>
   <div class="combo">
     <label class="combo__label" for="idcategoria">Categoria</label>
@@ -14,17 +16,22 @@
     </select>
   </div>
   <div class="field">
-    <label class="field__label" for="producto">Producto</label>
+    <label class="field__label" for="producto">Descripción</label>
     <textarea
       class="field__textarea"
       id="descripcion"
-      cols="30"
-      rows="10"
+      placeholder="Descripción del producto"
     ></textarea>
   </div>
   <div class="field">
     <label class="field__label" for="precio">Precio</label>
-    <input class="field__input" id="precio" type="number" step="0.01" />
+    <input
+      class="field__input"
+      id="precio"
+      type="number"
+      step="0.01"
+      placeholder="Precio del producto"
+    />
   </div>
   <div class="combo">
     <label class="combo__label" for="idmarca">Marca</label>
@@ -32,4 +39,18 @@
       <option disabled selected value="">-- Seleccione una marca --</option>
     </select>
   </div>
+  <div class="actions">
+    <button class="btn btn-primary" onclick="saveProduct(event)">
+      Guardar
+    </button>
+    <button type="reset" class="btn btn-secondary">Cancelar</button>
+  </div>
 </form>
+<div class="message" id="message">
+  <div class="message__head">
+    <h3 class="message__title" id="message-title"></h3>
+  </div>
+  <div class="message__body">
+    <p class="message__content" id="message-content"></p>
+  </div>
+</div>

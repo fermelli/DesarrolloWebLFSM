@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-06-2021 a las 23:58:17
+-- Tiempo de generación: 21-06-2021 a las 07:16:53
 -- Versión del servidor: 10.4.17-MariaDB
 -- Versión de PHP: 7.4.15
 
@@ -74,7 +74,6 @@ INSERT INTO `marcas` (`id`, `marca`) VALUES
 
 CREATE TABLE `productos` (
   `id` int(11) NOT NULL,
-  `fotografia` varchar(100) DEFAULT NULL,
   `producto` varchar(100) NOT NULL,
   `idcategoria` int(11) NOT NULL,
   `descripcion` text NOT NULL,
@@ -86,13 +85,13 @@ CREATE TABLE `productos` (
 -- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `productos` (`id`, `fotografia`, `producto`, `idcategoria`, `descripcion`, `idmarca`, `precio`) VALUES
-(1, '6089dbccb2670.jpg', 'computadora', 2, 'i7', 3, '33.00'),
-(3, '6089dbdf73221.jpg2', 'portatil', 2, 'i3 ', 4, '45.00'),
-(4, '60905a9e9343a.jpg', 'Magnam incididunt mo', 2, 'Reprehenderit nesci', 3, '68.00'),
-(7, '60906235cad05.png', 'computadora moderna', 5, 'Adipisci id magna i', 3, '25.00'),
-(9, '60905ac2987ef.png', 'Ad est perspiciatis', 5, 'Lorem pariatur Quis', 2, '54.00'),
-(10, '6089d88851776.jpg', 'Aliquam reiciendis e', 5, 'Nulla velit blanditi', 1, '5.00');
+INSERT INTO `productos` (`id`, `producto`, `idcategoria`, `descripcion`, `idmarca`, `precio`) VALUES
+(34, 'Impedit beatae cons', 5, 'Soluta et quia volup', 6, '3.00'),
+(35, 'Cumque tenetur nobis', 5, 'Ipsa voluptatem Be', 1, '93.00'),
+(36, 'Officiis dolor repre', 4, 'Velit eos velit sint', 2, '22.00'),
+(37, 'Architecto unde pari', 5, 'Officia officiis vol', 3, '35.00'),
+(38, 'Illo aliquam sunt v', 3, 'Ex sunt est culpa s', 6, '60.00'),
+(39, 'Culpa excepturi aut', 1, 'Sit est sunt non ne', 4, '69.00');
 
 -- --------------------------------------------------------
 
@@ -164,7 +163,7 @@ ALTER TABLE `marcas`
 -- AUTO_INCREMENT de la tabla `productos`
 --
 ALTER TABLE `productos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
