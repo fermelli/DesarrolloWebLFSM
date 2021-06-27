@@ -1,0 +1,18 @@
+.appbar__icon {
+  fill: rgba(255, 255, 255, 0.55);
+  height: 1.25rem;
+  margin: 0 0.5rem;
+  width: 1.5rem;
+}
+
+.nav-link:hover .appbar__icon {
+  fill: rgba(255, 255, 255, 0.75);
+}
+
+.nav-link.active .appbar__icon {
+  fill: var(--color-on-secondary);
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}

@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/my-likes.css" />
+    <title>Mis Gustos</title>
+  </head>
+
+  <body>
+    <header class="appbar">
+      <nav class="appbar__nav container">
+        <ul class="appbar__list">
+          <li class="appbar__item">
+            <a class="appbar__link" href="01-yo.html">
+              <svg class="appbar__icon">
+                <use xlink:href="./feather-sprite.svg#home" />
+              </svg>
+              <span class="appbar__text">Inicio</span>
+            </a>
+          </li>
+          <li class="appbar__item">
+            <a class="appbar__link" href="02-mi-ciudad.html">
+              <svg class="appbar__icon">
+                <use xlink:href="./feather-sprite.svg#city" />
+              </svg>
+              <span class="appbar__text">Mi Ciudad</span>
+            </a>
+          </li>
+          <li class="appbar__item">
+            <a class="appbar__link" href="03-mi-familia.html">
+              <svg class="appbar__icon">
+                <use xlink:href="./feather-sprite.svg#family" />
+              </svg>
+              <span class="appbar__text">Mi Familia</span>
+            </a>
+          </li>
+          <li class="appbar__item">
+            <a class="appbar__link" href="04-mis-amigos.html">
+              <svg class="appbar__icon">
+                <use xlink:href="./feather-sprite.svg#friends" />
+              </svg>
+              <span class="appbar__text">Mis Amigos</span>
+            </a>
+          </li>
+          <li class="appbar__item">
+            <a
+              class="appbar__link appbar__link--active"
+              href="05-mis-gustos.html"
+            >
+              <svg class="appbar__icon">
+                <use xlink:href="./feather-sprite.svg#my-likes" />
+              </svg>
+              <span class="appbar__text">Mis Gustos</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <h1 class="title">Mis Gustos</h1>
+        <h2 class="subtitle">Libros</h2>
+        <div class="container-books">
+          <div class="book">
+            <a
+              class="book__link-image"
+              href="https://www.manning.com/books/testing-vue-js-applications"
+              target="_blank"
+              title="Testing Vue.js Applications"
+            >
+              <img
+                height="250px"
+                src="https://images.manning.com/360/480/resize/book/b/ce535da-a523-4ef6-9434-cb8bc9fed503/Yerburgh-TestingVue-HI.png"
+                alt="Testing Vue.js Applications"
+              />
+            </a>
+          </div>
+          <div class="book">
+            <a
+              class="book__link-image"
+              href="https://github.com/getify/You-Dont-Know-JS"
+              target="_blank"
+              title="You Dont Know JS"
+            >
+              <img
+                height="250px"
+                src="https://d2sofvawe08yqg.cloudfront.net/ydkjsy-get-started/medium?1616830937"
+                alt="You Dont Know JS"
+              />
+            </a>
+          </div>
+          <div class="book">
+            <a
+              class="book__link-image"
+              href="https://leanpub.com/vuejs2"
+              target="_blank"
+              title="The Majesty of Vue.js 2"
+            >
+              <img
+                height="250px"
+                src="https://d2sofvawe08yqg.cloudfront.net/vuejs2/medium?1616705023"
+                alt="The Majesty of Vue.js 2"
+              />
+            </a>
+          </div>
+          <div class="book">
+            <a
+              class="book__link-image"
+              href="https://git-scm.com/book/en/v2"
+              target="_blank"
+              title="GIT Pro"
+            >
+              <img
+                height="250px"
+                src="https://git-scm.com/images/progit2.png"
+                alt="GIT Pro"
+              />
+            </a>
+          </div>
+        </div>
+        <h2 class="subtitle">Videos</h2>
+        <h3 class="subtitle">Música</h3>
+        <div class="container-videos">
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/URwX1oWdnUY"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=URwX1oWdnUY"
+              target="_blank"
+            >
+              A DEMON NIGHT Long Cool Woman in a Black Dress - The Hollies
+              Демон-ночь Tarantino
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/K3JGxj2rvAs"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=K3JGxj2rvAs"
+              target="_blank"
+            >
+              I Follow Rivers - Lykke Li (La Vie d'Adèle/La Vida de Adele)
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/9BdgnMfcqEo"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=9BdgnMfcqEo"
+              target="_blank"
+            >
+              Tame Impala The less i know the better lyrics
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/CICIOJqEb5c"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=CICIOJqEb5c&list=WL"
+              target="_blank"
+            >
+              Bill Withers - Ain't No Sunshine
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/yxAnp26dfWg"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=yxAnp26dfWg"
+              target="_blank"
+            >
+              Parcels - Gamesofluck ( Reeperbahn Festival - Hamburg 2018 )
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/Wo0xAiDGCXY"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=Wo0xAiDGCXY"
+              target="_blank"
+            >
+              Roosevelt - Shadows (Official Video)
+            </a>
+          </div>
+        </div>
+        <h3 class="subtitle">Video Juegos</h3>
+        <div class="container-videos">
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/1Xy0GRGupx0"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=1Xy0GRGupx0"
+              target="_blank"
+            >
+              ¿Puedes Vencer Minecraft sin Minar ni Romper Bloques?
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/KAPWLAQOktE"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=KAPWLAQOktE"
+              target="_blank"
+            >
+              30 DETALLES ALUCINANTES de AMONG US
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/4hqPH5jAnKw"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=4hqPH5jAnKw"
+              target="_blank"
+            >
+              Los JEFES MAS DIFÍCILES de World of Warcraft
+            </a>
+          </div>
+        </div>
+
+        <h3 class="subtitle">Películas</h3>
+        <div class="container-videos">
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/iOG4BDwe8SM"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=iOG4BDwe8SM"
+              target="_blank"
+            >
+              Depredador (1987) - Curiosidades
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/Q59SD3S4_Co"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=Q59SD3S4_Co"
+              target="_blank"
+            >
+              10 increíbles escenas de películas que fueron IMPROVISADAS
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/UHB9HClhRNc"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=UHB9HClhRNc"
+              target="_blank"
+            >
+              Los Mejores Finales De Las Películas De Terror Del Siglo
+            </a>
+          </div>
+        </div>
+        <h3 class="subtitle">Fútbol</h3>
+        <div class="container-videos">
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/qSctBcY8xMo"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=qSctBcY8xMo"
+              target="_blank"
+            >
+              Mejores CONTRAATAQUES de la historia
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/3LjgZnorAaQ"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=3LjgZnorAaQ"
+              target="_blank"
+            >
+              Cinco cambios que condenaron a la Selección Argentina |
+              AlgodeFulbo
+            </a>
+          </div>
+          <div class="video">
+            <iframe
+              class="video__iframe"
+              src="https://www.youtube.com/embed/ySVkke_4RvY"
+              target="_blank"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <a
+              class="video__link"
+              href="https://www.youtube.com/watch?v=ySVkke_4RvY"
+              target="_blank"
+            >
+              La Asombrosa Historia del LEICESTER CITY 🏆 CAMPEÓN PREMIER LEAGUE
+              2015/2016
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="foot">
+          <h2 class="foot__title">Paginas del Sitio</h2>
+          <ul class="foot__list">
+            <li class="foot__item">
+              <a class="foot__link" href="./01-yo.html"> Inicio </a>
+            </li>
+            <li class="foot__item">
+              <a class="foot__link" href="./02-mi-ciudad.html"> Mi Ciudad </a>
+            </li>
+            <li class="foot__item">
+              <a class="foot__link" href="./03-mi-familia.html"> Mi Familia </a>
+            </li>
+            <li class="foot__item">
+              <a class="foot__link" href="./04-mis-amigos.html"> Mis Amigos </a>
+            </li>
+            <li class="foot__item">
+              <a class="foot__link" href="./05-mis-gustos.html"> Mis Gustos </a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot">
+          <h2 class="foot__title">Enlaces Relacionados</h2>
+          <ul class="foot__list">
+            <li class="foot__item">
+              <a
+                class="foot__link"
+                href="https://github.com/cmontellanob/DesarrolloWeb1-21"
+                target="_blank"
+              >
+                Repositorio en GitHub de SIS256 - 01/2021
+              </a>
+            </li>
+            <li class="foot__item">
+              <a
+                class="foot__link"
+                href="https://classroom.google.com/c/MzA5MTEzMDI3MTcz?cjc=kpyvza3"
+                target="_blank"
+              >
+                SIS 256 Tecnología y Desarrollo Web (Google Classroom)
+              </a>
+            </li>
+            <li class="foot__item">
+              <a
+                class="foot__link"
+                href="https://github.com/fermelli/DesarrolloWebLFSM"
+                target="_blank"
+              >
+                Repositorio en GitHub
+              </a>
+            </li>
+            <li class="foot__item">
+              <a
+                class="foot__link"
+                href="https://www.facebook.com/groups/462372990474433/"
+                target="_blank"
+              >
+                Grupo en Facebook
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

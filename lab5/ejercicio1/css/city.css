@@ -1,0 +1,88 @@
+.card {
+  margin-bottom: 2rem;
+}
+
+.card__container-image {
+  height: 400px;
+  width: 100%;
+}
+
+.card__content {
+  line-height: 1.5;
+  padding: 2rem 1rem;
+}
+
+.card__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.card-attraction {
+  background-color: var(--color-on-secondary);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem var(--color-shadow);
+  margin: 1rem 1.5rem;
+}
+.card-attraction:hover {
+  box-shadow: 0 0 1rem var(--color-shadow);
+}
+
+.card-attraction__image {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  width: 100%;
+}
+
+.card-attraction__title {
+  border-bottom: 1px solid #a5a5a5;
+  color: var(--color-text);
+  margin: 0.5rem 1.5rem;
+  padding-bottom: 0.75rem;
+}
+
+.card-attraction__content {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+.card-attraction__actions {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+.card-attraction__link {
+  background-color: var(--color-on-secondary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.25rem;
+  color: var(--color-primary);
+  display: inline-block;
+  min-width: 100px;
+  padding: 0.5rem;
+  text-align: center;
+  transition: var(--transition-prop);
+}
+
+.card-attraction__link:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: var(--color-on-secondary);
+}
+
+.card-event {
+  background-color: var(--color-gray);
+  border-radius: 0.25rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card-event__title {
+  color: var(--color-secondary);
+  padding: 1rem;
+}
+
+.card-event__content {
+  font-size: 0.875rem;
+  padding: 0 1rem 1rem 1rem;
+}
